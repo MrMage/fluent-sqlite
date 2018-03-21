@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/service.git", .branch("master")),
 
         // 🔵 SQLite 3 wrapper for Swift
-        .package(url: "https://github.com/vapor/sqlite.git", .branch("nio")),
+        .package(url: "../sqlite.git", .branch("nio")),
     ],
     targets: [
         .target(name: "FluentSQLite", dependencies: ["Async", "Fluent", "FluentSQL", "Service", "SQLite"]),
